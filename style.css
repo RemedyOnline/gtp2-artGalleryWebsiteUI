@@ -62,10 +62,15 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	font-family: var(--ff-big-shoulders);
 	font-weight: var(--fw-heading);
 	text-transform: uppercase;
+}
+
+.hero-image {
+	width: 100%;
 }
 
 .title {
@@ -75,14 +80,14 @@ h3 {
 	margin-block: var(--space-lg);
 }
 
-.hero-cta {
+.cta {
 	margin-inline: var(--space-sm);
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-lg);
 }
 
-.hero-cta button {
+.cta button {
 	width: 260px;
 	height: 72px;
 	display: flex;
@@ -93,7 +98,7 @@ h3 {
 	padding: 0;
 }
 
-.hero-cta button span {
+.cta button span {
 	background-color: var(--AlmostBlack);
 	color: var(--White);
 	width: 100%;
@@ -108,16 +113,16 @@ h3 {
 	text-transform: uppercase;
 }
 
-.hero-cta button img {
+.cta button img {
 	padding: var(--space-md);
 	background-color: var(--Gold);
 }
 
-.hero-cta button:hover span {
+.cta button:hover span {
 	background-color: var(--Gold);
 }
 
-.hero-cta button:hover img {
+.cta button:hover img {
 	background-color: var(--AlmostBlack);
 }
 
@@ -169,4 +174,34 @@ main {
 .remarks h3 {
 	font-size: 50px;
 	line-height: 45px;
+}
+
+footer {
+	background-color: var(--AlmostBlack);
+	color: var(--White);
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+	padding-block: 48px;
+	padding-inline: 32px;
+}
+
+footer h4 {
+	font-size: 24px;
+	line-height: 1.5rem;
+}
+
+footer p {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+footer div {
+	display: flex;
+	gap: 20px;
+}
+
+footer div img:hover {
+	cursor: pointer;
+	opacity: 70%;
 }
