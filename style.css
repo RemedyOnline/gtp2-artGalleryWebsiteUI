@@ -1,0 +1,122 @@
+:root {
+	/* COLORS */
+	--Gold: #d5966c;
+	--DarkGrey: #444444;
+	--White: #ffffff;
+	--AlmostBlack: #151515;
+
+	/* TYPOGRAPHY */
+	/* Font Family */
+	--ff-big-shoulders: "Big Shoulders", sans-serif;
+	--ff-outfit: "Outfit", sans-serif;
+
+	/* Font Sizes */
+	--fs-heading-xl: 6rem; /* 96px */
+	--fs-heading-l: 4.375rem; /* 70px */
+	--fs-heading-m: 3.75rem; /* 60px */
+	--fs-heading-s: 2.25rem; /* 36px */
+	--fs-heading-xs: 1.25rem; /* 20px */
+	--fs-body-m: 1.375rem; /* 22px */
+	--fs-body-s: 1.125rem; /* 18px */
+
+	/* Line Height */
+	--lh-heading-xl: 5.5rem; /* 88px */
+	--lh-heading-l: 4.375rem; /* 70px */
+	--lh-heading-m: 3.4375rem; /* 55px */
+	--lh-heading-s: 2.25rem; /* 36px */
+	--lh-body-m: 2rem; /* 32px */
+	--lh-body-s: 1.75rem; /* 28px */
+
+	/* Font Weight */
+	--fw-heading: 900;
+	--fw-body: 300;
+
+	/* spacing */
+	--space-2xs: 0.25rem; /* 4px */
+	--space-xs: 0.65rem; /* 8px */
+	--space-sm: 1rem; /* 16px */
+	--space-md: 1.5rem; /* 24px */
+	--space-lg: 2rem; /* 32px */
+	--space-xl: 4rem; /* 64px */
+
+	/* border-radius */
+	--radius-sm: 0.5rem; /* 8px */
+	--radius-md: 0.75rem; /* 12px */
+	--radius-full: 999px; /* 999px */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--ff-outfit);
+	font-optical-sizing: auto;
+	font-weight: var(--fw-body);
+	font-style: normal;
+}
+
+.title {
+	font-family: var(--ff-big-shoulders);
+	font-weight: var(--fw-heading);
+	font-size: var(--fs-heading-m);
+	line-height: var(--lh-heading-m);
+	margin-inline: var(--space-sm);
+	margin-block: var(--space-lg);
+	text-transform: uppercase;
+}
+
+.hero-cta {
+	margin-inline: var(--space-sm);
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-lg);
+}
+
+.hero-cta p {
+	font-size: var(--fs-body-s);
+	line-height: var(--lh-body-s);
+}
+
+.hero-cta button {
+	width: 260px;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+}
+
+.hero-cta button span {
+	background-color: var(--AlmostBlack);
+	color: var(--White);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--ff-big-shoulders);
+	font-weight: var(--fw-heading);
+	font-size: var(--fs-heading-xs);
+	letter-spacing: 3.64px;
+	text-transform: uppercase;
+	transition: background-color 0.3s;
+}
+
+.hero-cta button img {
+	padding: var(--space-md);
+	background-color: var(--Gold);
+	transition: background-color 0.3s;
+}
+
+.hero-cta button:hover span {
+	background-color: var(--Gold);
+}
+
+.hero-cta button:hover img {
+	background-color: var(--AlmostBlack);
+}
