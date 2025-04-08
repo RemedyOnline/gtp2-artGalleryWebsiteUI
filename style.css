@@ -60,14 +60,19 @@ body {
 	font-style: normal;
 }
 
-.title {
+h1,
+h2,
+h3 {
 	font-family: var(--ff-big-shoulders);
 	font-weight: var(--fw-heading);
+	text-transform: uppercase;
+}
+
+.title {
 	font-size: var(--fs-heading-m);
 	line-height: var(--lh-heading-m);
 	margin-inline: var(--space-sm);
 	margin-block: var(--space-lg);
-	text-transform: uppercase;
 }
 
 .hero-cta {
@@ -135,9 +140,33 @@ main {
 }
 
 .about-section div h2 {
-	font-family: var(--ff-big-shoulders);
-	font-weight: var(--fw-heading);
-	text-transform: uppercase;
+	font-size: 50px;
+	line-height: 45px;
+}
+
+.gallery-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.second-block {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.remarks {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding-inline: 24px;
+	padding-block: 48px;
+	background-color: var(--AlmostBlack);
+	color: var(--White);
+}
+
+.remarks h3 {
 	font-size: 50px;
 	line-height: 45px;
 }
