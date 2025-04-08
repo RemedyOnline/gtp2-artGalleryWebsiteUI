@@ -53,8 +53,10 @@
 
 body {
 	font-family: var(--ff-outfit);
-	font-optical-sizing: auto;
 	font-weight: var(--fw-body);
+	font-size: var(--fs-body-s);
+	line-height: var(--lh-body-s);
+	font-optical-sizing: auto;
 	font-style: normal;
 }
 
@@ -73,11 +75,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-lg);
-}
-
-.hero-cta p {
-	font-size: var(--fs-body-s);
-	line-height: var(--lh-body-s);
 }
 
 .hero-cta button {
@@ -104,13 +101,11 @@ body {
 	font-size: var(--fs-heading-xs);
 	letter-spacing: 3.64px;
 	text-transform: uppercase;
-	transition: background-color 0.3s;
 }
 
 .hero-cta button img {
 	padding: var(--space-md);
 	background-color: var(--Gold);
-	transition: background-color 0.3s;
 }
 
 .hero-cta button:hover span {
@@ -119,4 +114,30 @@ body {
 
 .hero-cta button:hover img {
 	background-color: var(--AlmostBlack);
+}
+
+main {
+	margin-block: 120px;
+	padding-inline: 1rem;
+}
+
+.about-section {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin-bottom: 32px;
+}
+
+.about-section div {
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+}
+
+.about-section div h2 {
+	font-family: var(--ff-big-shoulders);
+	font-weight: var(--fw-heading);
+	text-transform: uppercase;
+	font-size: 50px;
+	line-height: 45px;
 }
