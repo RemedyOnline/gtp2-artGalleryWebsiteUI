@@ -69,6 +69,10 @@ h4 {
 	text-transform: uppercase;
 }
 
+a {
+	text-decoration: none;
+}
+
 .hero-image {
 	width: 100%;
 }
@@ -87,7 +91,7 @@ h4 {
 	gap: var(--space-lg);
 }
 
-.cta button {
+.cta-btn {
 	width: 260px;
 	height: 72px;
 	display: flex;
@@ -98,7 +102,7 @@ h4 {
 	padding: 0;
 }
 
-.cta button span {
+.cta-text {
 	background-color: var(--AlmostBlack);
 	color: var(--White);
 	width: 100%;
@@ -113,20 +117,20 @@ h4 {
 	text-transform: uppercase;
 }
 
-.cta button img {
+.cta-img {
 	padding: var(--space-md);
 	background-color: var(--Gold);
 }
 
-.cta button:hover span {
+.cta-btn:hover .cta-text {
 	background-color: var(--Gold);
 }
 
-.cta button:hover img {
+.cta-btn:hover .cta-img {
 	background-color: var(--AlmostBlack);
 }
 
-main {
+.main-home-section {
 	margin-block: 120px;
 	padding-inline: 1rem;
 }
@@ -138,13 +142,13 @@ main {
 	margin-bottom: 32px;
 }
 
-.about-section div {
+.about-details {
 	display: flex;
 	flex-direction: column;
 	gap: 21px;
 }
 
-.about-section div h2 {
+.about-details h2 {
 	font-size: 50px;
 	line-height: 45px;
 }
@@ -176,7 +180,7 @@ main {
 	line-height: 45px;
 }
 
-footer {
+.home-footer {
 	background-color: var(--AlmostBlack);
 	color: var(--White);
 	display: flex;
@@ -186,22 +190,107 @@ footer {
 	padding-inline: 32px;
 }
 
-footer h4 {
+.home-footer h4 {
 	font-size: 24px;
 	line-height: 1.5rem;
 }
 
-footer p {
+.home-footer p {
 	font-size: 16px;
 	line-height: 26px;
 }
 
-footer div {
+.home-footer .socials {
 	display: flex;
 	gap: 20px;
 }
 
-footer div img:hover {
+.home-footer .socials img:hover {
+	cursor: pointer;
+	opacity: 70%;
+}
+
+/* LOCATION PAGE */
+.main-map {
+	display: flex;
+}
+.map-img {
+	width: 100%;
+	height: 100%;
+}
+
+.back-btn {
+	width: 260px;
+	height: 72px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+.main-location-details {
+	padding-block: 48px;
+	padding-inline: 1rem;
+	background-color: var(--AlmostBlack);
+	color: var(--White);
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+}
+
+.main-location-details h2 {
+	font-size: 50px;
+	line-height: 45px;
+	margin-bottom: 48px;
+}
+
+.main-location-details h3 {
+	font-size: 32px;
+	line-height: 32px;
+	color: var(--Gold);
+}
+
+.main-location-details div {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+.location-footer {
+	background-color: var(--Gold);
+	color: var(--AlmostBlack);
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+	padding-block: 48px;
+	padding-inline: 32px;
+}
+
+.location-footer h4 {
+	font-size: 24px;
+	line-height: 1.5rem;
+}
+
+.location-footer p {
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.location-footer .socials {
+	display: flex;
+	gap: 20px;
+}
+
+.location-footer .socials img:hover {
 	cursor: pointer;
 	opacity: 70%;
 }
