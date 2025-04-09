@@ -37,11 +37,21 @@
 
 <body>
   <section class="main-map">
-    <img
-      src="./assets/mobile/image-map@2x.png"
-      alt="image-map"
-      class="map-img"
-    >
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="assets/desktop/image-map@2x.png"
+      >
+      <source
+        media="(min-width: 768px)"
+        srcset="assets/tablet/image-map@2x.png"
+      >
+      <img
+        src="./assets/mobile/image-map@2x.png"
+        alt="image-map"
+        class="map-img"
+      >
+    </picture>
     <a
       href="/"
       type="button"

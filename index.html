@@ -36,11 +36,21 @@
 </head>
 
 <body>
-  <img
-    src="./assets/mobile/image-hero@2x.jpg"
-    alt="image-hero"
-    class="hero-image"
-  >
+  <picture>
+    <source
+      media="(min-width: 1024px)"
+      srcset="assets/desktop/image-hero@2x.jpg"
+    >
+    <source
+      media="(min-width: 768px)"
+      srcset="assets/tablet/image-hero@2x.jpg"
+    >
+    <img
+      src="./assets/mobile/image-hero@2x.jpg"
+      alt="image-hero"
+      class="hero-image"
+    >
+  </picture>
   <h1 class="title">Modern<br>Art Gallery</h1>
   <section class="cta">
     <p>
@@ -64,10 +74,21 @@
   </section>
   <main class="main-home-section">
     <section class="about-section">
-      <img
-        src="./assets/mobile/image-grid-1@2x.jpg"
-        alt="image-grid-1"
-      >
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="assets/desktop/image-grid-1@2x.jpg"
+        >
+        <source
+          media="(min-width: 768px)"
+          srcset="assets/tablet/image-grid-1@2x.jpg"
+        >
+        <img
+          src="./assets/mobile/image-grid-1@2x.jpg"
+          alt="image-grid-1"
+          class="about-img"
+        >
+      </picture>
       <div class="about-details">
         <h2>
           Your day <br> at the gallery
@@ -79,15 +100,37 @@
       </div>
     </section>
     <section class="gallery-section">
-      <img
-        src="./assets/mobile/image-grid-2@2x.jpg"
-        alt="image-grid-2"
-      >
-      <div class="second-block">
-        <img
-          src="./assets/mobile/image-grid-3@2x.jpg"
-          alt="image-grid-3"
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="assets/desktop/image-grid-2@2x.jpg"
         >
+        <source
+          media="(min-width: 768px)"
+          srcset="assets/tablet/image-grid-2@2x.jpg"
+        >
+        <img
+          src="./assets/mobile/image-grid-2@2x.jpg"
+          alt="image-grid-2"
+          class="gallery-img"
+        >
+      </picture>
+      <div class="second-block">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/desktop/image-grid-3@2x.jpg"
+          >
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/tablet/image-grid-3@2x.jpg"
+          >
+          <img
+            src="./assets/mobile/image-grid-3@2x.jpg"
+            alt="image-grid-3"
+            class="gallery-img"
+          >
+        </picture>
         <div class="remarks">
           <h3>
             Come &amp; be inspired
