@@ -73,19 +73,25 @@ a {
 	text-decoration: none;
 }
 
+.hero-items {
+	margin-inline: var(--space-sm);
+	margin-block: var(--space-lg);
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
 .hero-image {
 	width: 100%;
+	height: 100%;
 }
 
 .title {
 	font-size: var(--fs-heading-m);
 	line-height: var(--lh-heading-m);
-	margin-inline: var(--space-sm);
-	margin-block: var(--space-lg);
 }
 
 .cta {
-	margin-inline: var(--space-sm);
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-lg);
@@ -313,6 +319,25 @@ ul {
 /* TABLET VIEW */
 @media (min-width: 768px) {
 	/* Home page */
+	.hero-image {
+		max-height: 700px;
+		width: 56%;
+	}
+
+	.hero-items {
+		position: absolute;
+		top: 145px;
+		left: 48%;
+	}
+
+	.cta p {
+		max-width: 339px;
+	}
+
+	.main-home-section {
+		padding-inline: 40px;
+	}
+
 	.about-section {
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -321,19 +346,12 @@ ul {
 	}
 
 	.about-img {
-		max-width: 398px;
+		max-height: 400px;
 	}
 
 	.about-details {
 		gap: 24px;
 		margin-block: 36px;
-	}
-
-	.about-details h2 {
-		max-width: 223px;
-	}
-
-	.about-details p {
 		max-width: 223px;
 	}
 
@@ -413,6 +431,114 @@ ul {
 
 /* DESKTOP VIEW */
 @media (min-width: 1024px) {
+	/* Home page */
+
+	.hero-section {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		height: 800px;
+	}
+
+	.hero-image {
+		width: 100%;
+		min-height: 100%;
+	}
+
+	.black-bg {
+		background-color: var(--AlmostBlack);
+	}
+
+	.hero-items {
+		position: absolute;
+		top: 24%;
+		left: 152px;
+		display: flex;
+		flex-direction: row;
+		gap: 148px;
+	}
+
+	.title {
+		font-size: var(--fs-heading-xl);
+		line-height: var(--lh-heading-xl);
+		width: 514px;
+		color: white;
+		mix-blend-mode: difference;
+	}
+
+	.cta {
+		gap: 64px;
+	}
+
+	.cta p {
+		min-width: 350px;
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.main-home-section {
+		padding-inline: 164px;
+	}
+
+	.about-section {
+		margin-bottom: 32px;
+	}
+
+	.about-details {
+		gap: 32px;
+		margin-block: 60px;
+		max-width: 350px;
+	}
+
+	.about-details h2 {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	.about-details p {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.gallery-section {
+		gap: 32px;
+		overflow: hidden;
+		/* max-height: 1000px; */
+	}
+
+	.second-block {
+		max-width: 445px;
+		gap: 32px;
+	}
+
+	.remarks {
+		gap: 32px;
+		padding-block: 64px;
+		padding-inline: 40px;
+	}
+
+	.remarks h3 {
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	.remarks p {
+		max-width: 350px;
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	.home-footer {
+		padding-block: 80px;
+		padding-inline: 156px;
+	}
+
+	.home-footer p {
+		max-width: 430px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+
 	/* Location page */
 	.back-btn {
 		left: 156px;

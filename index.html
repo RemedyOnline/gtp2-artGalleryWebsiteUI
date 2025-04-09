@@ -36,41 +36,46 @@
 </head>
 
 <body>
-  <picture>
-    <source
-      media="(min-width: 1024px)"
-      srcset="assets/desktop/image-hero@2x.jpg"
-    >
-    <source
-      media="(min-width: 768px)"
-      srcset="assets/tablet/image-hero@2x.jpg"
-    >
-    <img
-      src="./assets/mobile/image-hero@2x.jpg"
-      alt="image-hero"
-      class="hero-image"
-    >
-  </picture>
-  <h1 class="title">Modern<br>Art Gallery</h1>
-  <section class="cta">
-    <p>
-      The arts in the collection of the Modern Art Gallery all started
-      from a spark of inspiration. Will these pieces inspire you? Visit
-      us and find out.
-    </p>
-    <a
-      href="/location.html"
-      type="button"
-      class="cta-btn"
-    >
-      <span class="cta-text">Our location</span>
-      <img
-        class="cta-img"
-        src="./assets/icon-arrow-right.svg"
-        alt="icon-arrow-right"
-        aria-hidden="true"
+  <section class="hero-section">
+    <div class="black-bg"></div>
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="assets/desktop/image-hero@2x.jpg"
       >
-    </a>
+      <source
+        media="(min-width: 768px)"
+        srcset="assets/tablet/image-hero@2x.jpg"
+      >
+      <img
+        src="./assets/mobile/image-hero@2x.jpg"
+        alt="image-hero"
+        class="hero-image"
+      >
+    </picture>
+    <div class="hero-items">
+      <h1 class="title">Modern<br>Art Gallery</h1>
+      <div class="cta">
+        <p>
+          The arts in the collection of the Modern Art Gallery all started
+          from a spark of inspiration. Will these pieces inspire you? Visit
+          us and find out.
+        </p>
+        <a
+          href="/location.html"
+          type="button"
+          class="cta-btn"
+        >
+          <span class="cta-text">Our location</span>
+          <img
+            class="cta-img"
+            src="./assets/icon-arrow-right.svg"
+            alt="icon-arrow-right"
+            aria-hidden="true"
+          >
+        </a>
+      </div>
+    </div>
   </section>
   <main class="main-home-section">
     <section class="about-section">
