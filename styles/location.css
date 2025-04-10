@@ -49,7 +49,7 @@
 }
 
 .main-location-details {
-	padding-block: var(--space-xl) px;
+	padding-block: var(--space-xl);
 	padding-inline: 1rem;
 	background-color: var(--AlmostBlack);
 	color: var(--White);
