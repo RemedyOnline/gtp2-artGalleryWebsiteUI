@@ -249,6 +249,33 @@ a {
 	top: 0px;
 }
 
+.back-text {
+	background-color: var(--AlmostBlack);
+	color: var(--White);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--ff-big-shoulders);
+	font-weight: var(--fw-heading);
+	font-size: var(--fs-heading-xs);
+	letter-spacing: 3.64px;
+	text-transform: uppercase;
+}
+.back-img {
+	padding: var(--space-md);
+	background-color: var(--Gold);
+}
+
+.back-btn:hover .back-text {
+	background-color: var(--Gold);
+}
+
+.back-btn:hover .back-img {
+	background-color: var(--AlmostBlack);
+}
+
 .main-location-details {
 	padding-block: 48px;
 	padding-inline: 1rem;
