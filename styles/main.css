@@ -335,7 +335,7 @@ a {
 	.hero-items {
 		position: absolute;
 		top: 24%;
-		left: 204px;
+		left: 208px;
 		display: flex;
 		flex-direction: row;
 		gap: 148px;
