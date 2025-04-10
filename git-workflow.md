@@ -1,4 +1,4 @@
-#Git-Workflow Documentation
+# Git-Workflow Documentation
 
 This document outlines the git workflow used for this project.
 It includes all the the git commands and steps I followed from project setup to completion.
